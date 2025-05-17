@@ -64,6 +64,7 @@ static inline std::string
 PrintReceivedPacket(Ptr<Socket> socket, Ptr<Packet> packet, Address senderAddress)
 {
     std::ostringstream oss;
+    oss << "At time ";
 
     oss << Simulator::Now().GetSeconds() << " " << socket->GetNode()->GetId();
 
